@@ -1,3 +1,6 @@
+$forest-green: rgb(16, 67, 0);
+$navy-blue: rgb(0, 0, 76);
+
 .App {
   header {
     display: flex;
@@ -5,16 +8,33 @@
     justify-content: space-around;
     width: 100%;
     position: fixed;
+    align-items: center;
     transition: background-color 0.3s ease;
+    padding-top: 5px;
     &.inverted {
       background-color: white;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       .nav__link {
-        color: rgb(0, 0, 76);
+        color: $navy-blue;
       }
     }
-    .logo {
-      width: 80px;
+    .logo-container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      &__title-container {
+        font-weight: 800;
+        text-transform: uppercase;
+        h4 {
+          color: $forest-green;
+        }
+      }
+      .logo {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     }
     .nav {
       display: flex;
@@ -25,6 +45,9 @@
         color: white;
         text-decoration: underline;
         text-underline-offset: 4px;
+        font-style: italic;
+        font-weight: 600;
+        text-transform: uppercase;
       }
     }
   }
@@ -33,6 +56,18 @@
     &__background-pic {
       height: auto;
       width: 100%;
+    }
+
+    .mtns {
+      position: relative;
+      &__title-container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
     }
   }
 }
