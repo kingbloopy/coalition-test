@@ -1,0 +1,38 @@
+.App {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    transition: background-color 0.3s ease;
+    &.inverted {
+      background-color: white;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      .nav__link {
+        color: rgb(0, 0, 76);
+      }
+    }
+    .logo {
+      width: 80px;
+    }
+    .nav {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      &__link {
+        color: white;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+      }
+    }
+  }
+
+  .section {
+    &__background-pic {
+      height: auto;
+      width: 100%;
+    }
+  }
+}
