@@ -1,0 +1,25 @@
+$forest-green: #163835;
+$lighter-green: #245c57;
+$medium-green: #1f4e4a;
+$light-blue: #e1fefc;
+
+$mobile: 576px;
+$tablet-small: 768px;
+$tablet: 992px;
+$desktop: 1200px;
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+
+  &__link {
+    color: $light-blue;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    font-style: italic;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}

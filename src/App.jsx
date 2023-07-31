@@ -1,11 +1,12 @@
 import './App.scss';
 import './reset.css';
-import React from 'react';
+import React from "react";
 import Mtns from './components/mtns/mtns';
 import Summit from './components/summit/summit';
 import Camp from './components/camp/camp';
 import Tree from './components/tree';
 import logo from './images/logo.png';
+import Nav from './components/nav/nav';
 
 function App() {
 
@@ -31,10 +32,7 @@ function App() {
             <h5>Mountains</h5>
           </div>
         </a>
-        <ul className='nav'>
-          <a className='nav__link' href='#summit'>01. Summit</a>
-          <a className='nav__link' href='#camp'>02. Camp</a>
-        </ul>
+        <Nav/>
       </header>
 
       <div className='content'>

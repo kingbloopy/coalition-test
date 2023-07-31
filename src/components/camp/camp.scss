@@ -78,7 +78,6 @@ $desktop: 1200px;
     margin: auto;
     display: flex;
     flex-direction: row;
-    // gap: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     padding-left: 100px;
     text-transform: uppercase;
@@ -120,6 +119,12 @@ $desktop: 1200px;
     padding: 20px;
     border-radius: 8px;
     display: none;
+
+    @media (max-width: $tablet-small ){
+      position: relative;
+      transform: unset;
+      left: unset;
+    }
 
     &.active {
       display: block;
