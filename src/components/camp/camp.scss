@@ -24,6 +24,7 @@ $desktop: 1200px;
       flex-direction: column;
       align-items: start;
       gap: 10px;
+      padding: 20px;
     }
     
     &__title {
@@ -82,6 +83,10 @@ $desktop: 1200px;
     padding-left: 100px;
     text-transform: uppercase;
     font-weight: 800;
+    @media (max-width: $tablet-small ){
+      padding-left: unset;
+      justify-content: center;
+    }
     
     &__tab {
       padding: 20px 10px;
@@ -106,13 +111,17 @@ $desktop: 1200px;
     }
   }
 
+  &__schedule-container {
+    display: flex;
+    justify-content: center;
+  }
+
   &__telluride, &__ourey {
     position: absolute;
     text-align: center;
     top: 45%;
     left: 30%;
     right: 0;
-    margin: auto;
     transform: translateY(-50%);
     background-color: rgba(255, 255, 255, 0.7);
     max-width: 250px;
@@ -125,7 +134,7 @@ $desktop: 1200px;
       transform: unset;
       left: unset;
       border: 1px solid $medium-green;
-      margin-top: 20px;
+      margin: 20px;
     }
 
     &.active {

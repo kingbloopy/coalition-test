@@ -2,6 +2,8 @@
 
 [LIVE SITE- San Juan Mountains](https://kingbloopy.github.io/coalition-test/)
 
+<img src="/src/images/screenshot.png" alt="screenshot" />
+
 ## Available Scripts
 
 In the project directory, you can run:

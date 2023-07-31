@@ -31,31 +31,33 @@ const Camp = () => {
             Ourey
           </div>
         </div>
-        <div className={tellurideActive ? "camp__telluride active" : "camp__telluride"} id="telluride">
-          <h6 className="camp__telluride__heading">Telluride Availability</h6>
-          <ul className="camp__telluride__grid">
-            <li>1 Aug '23</li>
-            <li className="status">Open</li>
-            <li>2 Aug '23</li>
-            <li className="status">Open</li>
-            <li>3 Aug '23</li>
-            <li className="status full">Full</li>
-            <li>4 Aug '23</li>
-            <li className="status">Open</li>
-          </ul>
-        </div>
-        <div className={oureyActive ? "camp__ourey active" : "camp__ourey"} id="ourey">
-          <h6 className="camp__ourey__heading">Ourey Availability</h6>
-          <ul className="camp__ourey__grid">
-            <li>1 Aug '23</li>
-            <li className="status full">Full</li>
-            <li>2 Aug '23</li>
-            <li className="status">Open</li>
-            <li>3 Aug '23</li>
-            <li className="status full">Full</li>
-            <li>4 Aug '23</li>
-            <li className="status full">Open</li>
-          </ul>
+        <div className="camp__schedule-container">
+          <div className={tellurideActive ? "camp__telluride active" : "camp__telluride"} id="telluride">
+            <h6 className="camp__telluride__heading">Telluride Availability</h6>
+            <ul className="camp__telluride__grid">
+              <li>1 Aug '23</li>
+              <li className="status">Open</li>
+              <li>2 Aug '23</li>
+              <li className="status">Open</li>
+              <li>3 Aug '23</li>
+              <li className="status full">Full</li>
+              <li>4 Aug '23</li>
+              <li className="status">Open</li>
+            </ul>
+          </div>
+          <div className={oureyActive ? "camp__ourey active" : "camp__ourey"} id="ourey">
+            <h6 className="camp__ourey__heading">Ourey Availability</h6>
+            <ul className="camp__ourey__grid">
+              <li>1 Aug '23</li>
+              <li className="status full">Full</li>
+              <li>2 Aug '23</li>
+              <li className="status">Open</li>
+              <li>3 Aug '23</li>
+              <li className="status full">Full</li>
+              <li>4 Aug '23</li>
+              <li className="status full">Open</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
