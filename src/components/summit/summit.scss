@@ -1,0 +1,109 @@
+$forest-green: #163835;
+$light-blue: #e1fefc;
+
+$mobile: 576px;
+$tablet-small: 768px;
+$tablet: 992px;
+$desktop: 1200px;
+
+.summit {
+  position: relative;
+
+  &__mobile-title {
+    display: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $forest-green;
+    margin: 10px;
+  
+    h1 {
+      font-size: 100px;
+  
+      @media (max-width: $tablet ) {
+        font-size: 80px;
+      }
+  
+      @media (max-width: $mobile ) {
+        font-size: 60px;
+      }
+    }
+  
+    h2 {
+      font-size: 40px;
+      margin-top: 40px;
+  
+      @media (max-width: $tablet ) {
+        font-size: 30px;
+        margin-top: 30px;
+      }
+  
+      @media (max-width: $mobile ) {
+        font-size: 20px;
+        margin-top: 20px;
+      }
+    }
+
+    @media (max-width: $tablet-small ) {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+  &__content-container {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+    max-width: 600px;
+
+    @media (max-width: $tablet-small ){
+      position: relative;
+      transform: unset;
+    }
+
+    &__title {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 8px;
+      text-transform: uppercase;
+      font-weight: 800;
+      @media (max-width: $tablet-small ) {
+        display: none;
+      }
+      h1 {
+        color: $light-blue;
+        font-size: 100px;
+        @media  (max-width: $tablet ) {
+          font-size: 80px;
+        }
+        @media  (max-width: $mobile ) {
+          font-size: 60px;
+        }
+      }
+      h2 {
+        color: $forest-green;
+        font-size: 40px;
+        margin-top: 40px;
+        @media  (max-width: $tablet ) {
+          font-size: 30px;
+          margin-top: 30px;
+        }
+        @media  (max-width: $mobile ) {
+          font-size: 20px;
+          margin-top: 20px;
+        }
+      }
+    }
+    
+    &__body {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 40px;
+      border-radius: 8px;
+      margin: 10px;
+    }
+  }
+}

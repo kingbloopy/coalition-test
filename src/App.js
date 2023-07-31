@@ -1,8 +1,9 @@
 import './App.scss';
 import './reset.css';
-import mtns from './images/mtns.jpg';
-import summit from './images/summit.jpg';
-import camp from './images/camp.jpg';
+import Mtns from './components/mtns/mtns';
+import Summit from './components/summit/summit';
+import Camp from './components/camp/camp';
+import Tree from './components/tree';
 import logo from './images/logo.png';
 
 function App() {
@@ -35,21 +36,36 @@ function App() {
         </ul>
       </header>
 
-      <div className='section' id="mtns">
-        <img className='section__background-pic' src={mtns} />
-        <div className='mtns__title-container'>
-          <h1>San Juan</h1>
-          <h2>Mountains</h2>
+      <div className='content'>
+        <Mtns/>
+        <div className='trees'>
+          <Tree/>
+          <Tree/>
+          <Tree/>
+        </div>
+        <Summit/>
+        <div className='trees'>
+          <Tree/>
+          <Tree/>
+          <Tree/>
+        </div>
+        <Camp/>
+        <div className='trees'>
+          <Tree/>
+          <Tree/>
+          <Tree/>
         </div>
       </div>
-
-      <div className='section' id='summit'>
-        <img className='section__background-pic' src={summit} />
-      </div>
-
-      <div className='section' id='camp'>
-        <img className='section__background-pic' src={camp} />
-      </div>
+      <footer>
+        <a className='logo-container' href='/'>
+          <img className='logo' src={logo} />
+          <div className='logo-container__title-container'>
+            <h4>San Juan</h4>
+            <h5>Mountains</h5>
+          </div>
+        </a>
+        <span className='copyright'>Copyright 2023. All rights reserved.</span>
+      </footer>
     </div>
   );
 }

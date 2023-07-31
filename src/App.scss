@@ -1,21 +1,42 @@
-$forest-green: rgb(16, 67, 0);
-$navy-blue: rgb(0, 0, 76);
+$forest-green: #163835;
+$light-blue: #e1fefc;
+
+$mobile: 576px;
+$tablet-small: 768px;
+$tablet: 992px;
+$desktop: 1200px;
 
 .App {
+  .content {
+    display: flex;
+    flex-direction: column;
+
+    .trees {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 50px;
+      padding: 80px 0;
+    }
+  }
   header {
     display: flex;
+    z-index: 2;
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
     position: fixed;
     align-items: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
     padding-top: 5px;
     &.inverted {
       background-color: white;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
       .nav__link {
-        color: $navy-blue;
+        color: $forest-green;
+      }
+      .logo-container__title-container h4 {
+        color: $forest-green;
       }
     }
     .logo-container {
@@ -26,7 +47,10 @@ $navy-blue: rgb(0, 0, 76);
         font-weight: 800;
         text-transform: uppercase;
         h4 {
-          color: $forest-green;
+          color: $light-blue;
+        }
+        @media (max-width: $tablet-small ) {
+          display: none;
         }
       }
       .logo {
@@ -42,7 +66,7 @@ $navy-blue: rgb(0, 0, 76);
       gap: 20px;
       align-items: center;
       &__link {
-        color: white;
+        color: $light-blue;
         text-decoration: underline;
         text-underline-offset: 4px;
         font-style: italic;
@@ -54,20 +78,53 @@ $navy-blue: rgb(0, 0, 76);
 
   .section {
     &__background-pic {
+      max-height: 720px;
       height: auto;
       width: 100%;
+      object-fit: cover;
     }
+  }
 
-    .mtns {
-      position: relative;
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding-top: 100px;
+    background-color: $forest-green;
+    
+    .logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
       &__title-container {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        margin: auto;
+        font-weight: 800;
+        text-transform: uppercase;
+  
+        h4 {
+          color: #245c57;
+        }
+        h5 {
+          color: #1f4e4a;
+        }
       }
+  
+      .logo {
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 50%;
+      }
+    }
+    .copyright {
+      color: #245c57;
     }
   }
 }
+
+@import './components/camp/camp.scss';
+@import './components/summit/summit.scss';
+@import './components/mtns/mtns.scss';
