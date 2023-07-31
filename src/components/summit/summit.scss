@@ -1,4 +1,6 @@
 $forest-green: #163835;
+$lighter-green: #245c57;
+$medium-green: #1f4e4a;
 $light-blue: #e1fefc;
 
 $mobile: 576px;
@@ -117,19 +119,15 @@ $desktop: 1200px;
     .swiper-pagination {
       bottom: unset !important;
       .swiper-pagination-bullet {
-        background: #1f4e4a !important;
+        background: $medium-green !important;
       } 
       .swiper-pagination-bullet-active {
-        background: #245c57 !important;
+        background: $lighter-green !important;
       }
     }
     .swiper-img {
       width: 100%;
       cursor: pointer;
-
-      &::after {
-        display: none;
-      }
     }
   }
 }
