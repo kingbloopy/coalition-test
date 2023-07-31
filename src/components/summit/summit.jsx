@@ -9,6 +9,7 @@ import lake from '../../images/lake.jpg';
 import peak from '../../images/peak.jpg';
 import trucks from '../../images/trucks.jpg';
 import toad from '../../images/toad.jpg';
+import blue from '../../images/blue.jpg';
 
 const Summit = () => {
   return (
@@ -33,11 +34,9 @@ const Summit = () => {
           navigation={true}
           breakpoints={{
             576: {
-              // width: 576,
               slidesPerView: 2,
             },
             768: {
-              // width: 768,
               slidesPerView: 4,
             },
           }}
@@ -46,6 +45,7 @@ const Summit = () => {
           <SwiperSlide><img className='swiper-img' src={aspens} /></SwiperSlide>
           <SwiperSlide><img className='swiper-img' src={peak} /></SwiperSlide>
           <SwiperSlide><img className='swiper-img' src={toad} /></SwiperSlide>
+          <SwiperSlide><img className='swiper-img' src={blue} /></SwiperSlide>
           <SwiperSlide><img className='swiper-img' src={trucks} /></SwiperSlide>
           ...
         </Swiper>

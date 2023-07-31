@@ -126,6 +126,10 @@ $desktop: 1200px;
     .swiper-img {
       width: 100%;
       cursor: pointer;
+
+      &::after {
+        display: none;
+      }
     }
   }
 }
