@@ -10,6 +10,7 @@ import peak from '../../images/peak.jpg';
 import trucks from '../../images/trucks.jpg';
 import toad from '../../images/toad.jpg';
 import blue from '../../images/blue.jpg';
+import './summit.scss';
 
 const Summit = () => {
   return (

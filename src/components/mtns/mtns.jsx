@@ -1,5 +1,6 @@
 import React from "react";
 import mtns from '../../images/mtns.jpg';
+import './mtns.scss';
 
 const Mtns = () => {
   return (

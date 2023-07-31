@@ -124,6 +124,8 @@ $desktop: 1200px;
       position: relative;
       transform: unset;
       left: unset;
+      border: 1px solid $medium-green;
+      margin-top: 20px;
     }
 
     &.active {

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './nav.scss';
 
 const Nav = () => {
   const [isOpen, setOpen] = useState(false);

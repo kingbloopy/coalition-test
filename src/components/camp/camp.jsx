@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import camp from '../../images/camp.jpg';
+import './camp.scss';
 
 const Camp = () => {
   const [tellurideActive, setTellurideActive] = useState(true);

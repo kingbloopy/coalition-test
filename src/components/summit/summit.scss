@@ -16,7 +16,7 @@ $desktop: 1200px;
     text-transform: uppercase;
     font-weight: 800;
     color: $forest-green;
-    margin: 10px;
+    margin: 10px 40px;
   
     h1 {
       font-size: 100px;
@@ -114,6 +114,10 @@ $desktop: 1200px;
     padding: 20px 100px;
     @media (max-width: $tablet-small ) {
       padding: 10px;
+    }
+
+    .swiper {
+      color: white;
     }
 
     .swiper-pagination {
