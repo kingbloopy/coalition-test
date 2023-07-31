@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/coalition-test/static/css/main.01421367.css",
-    "main.js": "/coalition-test/static/js/main.2670533d.js",
-    "static/js/787.ca224395.chunk.js": "/coalition-test/static/js/787.ca224395.chunk.js",
-    "static/media/mtns.jpg": "/coalition-test/static/media/mtns.d32cad23bcc65a72e917.jpg",
-    "static/media/blue.jpg": "/coalition-test/static/media/blue.0231caec36017e7868e9.jpg",
-    "static/media/aspens.jpg": "/coalition-test/static/media/aspens.9d503d35d50f22cbc4f4.jpg",
-    "static/media/trucks.jpg": "/coalition-test/static/media/trucks.68a1fce0d283de656cd0.jpg",
-    "static/media/summit.jpg": "/coalition-test/static/media/summit.bb1ae8936bf089887892.jpg",
-    "static/media/toad.jpg": "/coalition-test/static/media/toad.0f50c78ee608e2c853e0.jpg",
-    "static/media/camp.jpg": "/coalition-test/static/media/camp.31951673d1121d35383f.jpg",
-    "static/media/lake.jpg": "/coalition-test/static/media/lake.e196b5bb32e62491ebef.jpg",
-    "static/media/peak.jpg": "/coalition-test/static/media/peak.881b611b603383ba15fe.jpg",
-    "static/media/logo.png": "/coalition-test/static/media/logo.b059960e33179ef7aba8.png",
-    "index.html": "/coalition-test/index.html",
-    "main.01421367.css.map": "/coalition-test/static/css/main.01421367.css.map",
-    "main.2670533d.js.map": "/coalition-test/static/js/main.2670533d.js.map",
-    "787.ca224395.chunk.js.map": "/coalition-test/static/js/787.ca224395.chunk.js.map"
+    "main.css": "/static/css/main.01421367.css",
+    "main.js": "/static/js/main.b18a34e3.js",
+    "static/js/787.ca224395.chunk.js": "/static/js/787.ca224395.chunk.js",
+    "static/media/mtns.jpg": "/static/media/mtns.d32cad23bcc65a72e917.jpg",
+    "static/media/blue.jpg": "/static/media/blue.0231caec36017e7868e9.jpg",
+    "static/media/aspens.jpg": "/static/media/aspens.9d503d35d50f22cbc4f4.jpg",
+    "static/media/trucks.jpg": "/static/media/trucks.68a1fce0d283de656cd0.jpg",
+    "static/media/summit.jpg": "/static/media/summit.bb1ae8936bf089887892.jpg",
+    "static/media/toad.jpg": "/static/media/toad.0f50c78ee608e2c853e0.jpg",
+    "static/media/camp.jpg": "/static/media/camp.31951673d1121d35383f.jpg",
+    "static/media/lake.jpg": "/static/media/lake.e196b5bb32e62491ebef.jpg",
+    "static/media/peak.jpg": "/static/media/peak.881b611b603383ba15fe.jpg",
+    "static/media/logo.png": "/static/media/logo.b059960e33179ef7aba8.png",
+    "index.html": "/index.html",
+    "main.01421367.css.map": "/static/css/main.01421367.css.map",
+    "main.b18a34e3.js.map": "/static/js/main.b18a34e3.js.map",
+    "787.ca224395.chunk.js.map": "/static/js/787.ca224395.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.01421367.css",
-    "static/js/main.2670533d.js"
+    "static/js/main.b18a34e3.js"
   ]
 }
