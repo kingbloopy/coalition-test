@@ -1,5 +1,6 @@
 import './App.scss';
 import './reset.css';
+import React from 'react';
 import Mtns from './components/mtns/mtns';
 import Summit from './components/summit/summit';
 import Camp from './components/camp/camp';

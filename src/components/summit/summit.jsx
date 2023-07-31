@@ -1,5 +1,14 @@
 import React from "react";
 import summit from '../../images/summit.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import aspens from '../../images/aspens.jpg';
+import lake from '../../images/lake.jpg';
+import peak from '../../images/peak.jpg';
+import trucks from '../../images/trucks.jpg';
+import toad from '../../images/toad.jpg';
 
 const Summit = () => {
   return (
@@ -14,7 +23,32 @@ const Summit = () => {
           <h1>01.</h1>
           <h2>Summit</h2>
         </div>
-        <p className='summit__content-container__body'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p className='summit__content-container__body'>Engineer Mountain is a distinctive, high 12er rising to the southwest of the historic mining town of Silverton, Colorado. The lower of two summits named "Engineer Mountain" in Colorado, the bulking mass of Engineer Mountain is visible from various points along US Hwy 550. This summit has nearly 1,500 of vertical prominence, with the visual prominence to match!</p>
+      </div>
+      <div className="summit__swiper-container">
+        <Swiper
+          spaceBetween={10}
+          modules={[Pagination, Navigation]}
+          pagination={{ clickable: true }}
+          navigation={true}
+          breakpoints={{
+            576: {
+              // width: 576,
+              slidesPerView: 2,
+            },
+            768: {
+              // width: 768,
+              slidesPerView: 4,
+            },
+          }}
+        >
+          <SwiperSlide><img className='swiper-img' src={lake} /></SwiperSlide>
+          <SwiperSlide><img className='swiper-img' src={aspens} /></SwiperSlide>
+          <SwiperSlide><img className='swiper-img' src={peak} /></SwiperSlide>
+          <SwiperSlide><img className='swiper-img' src={toad} /></SwiperSlide>
+          <SwiperSlide><img className='swiper-img' src={trucks} /></SwiperSlide>
+          ...
+        </Swiper>
       </div>
     </div>
   );

@@ -52,7 +52,7 @@ $desktop: 1200px;
   }
   &__content-container {
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 0;
     right: 0;
     margin: auto;
@@ -104,6 +104,28 @@ $desktop: 1200px;
       padding: 40px;
       border-radius: 8px;
       margin: 10px;
+      line-height: 20px;
+    }
+  }
+
+  &__swiper-container {
+    padding: 20px 100px;
+    @media (max-width: $tablet-small ) {
+      padding: 10px;
+    }
+
+    .swiper-pagination {
+      bottom: unset !important;
+      .swiper-pagination-bullet {
+        background: #1f4e4a !important;
+      } 
+      .swiper-pagination-bullet-active {
+        background: #245c57 !important;
+      }
+    }
+    .swiper-img {
+      width: 100%;
+      cursor: pointer;
     }
   }
 }
