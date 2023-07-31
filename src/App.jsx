@@ -7,6 +7,7 @@ import Camp from './components/camp/camp';
 import Tree from './components/tree';
 import logo from './images/logo.png';
 import Nav from './components/nav/nav';
+import Sidebar from './components/nav/sidebar';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <div className="App">
+      <Sidebar pageWrapId={"page-wrap"}/>
       <header>
         <a className='logo-container' href='/'>
           <img className='logo' src={logo} />

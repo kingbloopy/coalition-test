@@ -31,6 +31,10 @@ $desktop: 1200px;
     align-items: center;
     transition: background-color 0.3s ease, color 0.3s ease;
     padding-top: 5px;
+
+    @media (max-width: $tablet-small ){
+      justify-content: flex-start;
+    }
     &.inverted {
       background-color: white;
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -40,11 +44,17 @@ $desktop: 1200px;
       .logo-container__title-container h4 {
         color: $forest-green;
       }
+      .logo-container__title-container {
+        @media (max-width: $tablet-small ) {
+          display: block;
+        }
+      }
     }
     .logo-container {
       display: flex;
       flex-direction: row;
       align-items: center;
+      
       &__title-container {
         font-weight: 800;
         text-transform: uppercase;
