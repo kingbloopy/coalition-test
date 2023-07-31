@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import camp from '../../images/camp.jpg';
 
 const Camp = () => {
+  const [tellurideActive, setTellurideActive] = useState(true);
+  const [oureyActive, setOureyActive] = useState(false);
+
   return (
     <div className='section camp' id='camp'>
       <div className='camp__content-container'>
@@ -14,15 +17,21 @@ const Camp = () => {
       <div className="camp__interactive">
         <img className='section__background-pic' src={camp} />
         <div className="camp__tabs">
-          <div className="camp__tabs__tab telluride active">
+          <div className={tellurideActive ? "camp__tabs__tab telluride active" : "camp__tabs__tab telluride"} id="telluride-tab" onClick={() => {
+            setTellurideActive(true);
+            setOureyActive(false);
+          }}>
             Telluride
           </div>
-          <div className="camp__tabs__tab ourey">
+          <div className={oureyActive ? "camp__tabs__tab ourey active" : "camp__tabs__tab ourey"} id="ourey-tab" onClick={() => {
+            setTellurideActive(false);
+            setOureyActive(true);
+          }}>
             Ourey
           </div>
         </div>
-        <div className="camp__telluride active">
-          <h6 className="camp__telluride__heading">Camping Availability</h6>
+        <div className={tellurideActive ? "camp__telluride active" : "camp__telluride"} id="telluride">
+          <h6 className="camp__telluride__heading">Telluride Availability</h6>
           <ul className="camp__telluride__grid">
             <li>1 Aug '23</li>
             <li className="status">Open</li>
@@ -34,9 +43,19 @@ const Camp = () => {
             <li className="status">Open</li>
           </ul>
         </div>
-        {/* <div className="camp__ourey">
-          <h6>Camping Availibiliy</h6>
-        </div> */}
+        <div className={oureyActive ? "camp__ourey active" : "camp__ourey"} id="ourey">
+          <h6 className="camp__ourey__heading">Ourey Availability</h6>
+          <ul className="camp__ourey__grid">
+            <li>1 Aug '23</li>
+            <li className="status full">Full</li>
+            <li>2 Aug '23</li>
+            <li className="status">Open</li>
+            <li>3 Aug '23</li>
+            <li className="status full">Full</li>
+            <li>4 Aug '23</li>
+            <li className="status full">Open</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
