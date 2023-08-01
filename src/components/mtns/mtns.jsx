@@ -5,7 +5,7 @@ import './mtns.scss';
 const Mtns = () => {
   return (
     <div className='section mtns' id="mtns">
-      <img className='section__background-pic' src={mtns} />
+      <img alt="mountains" className='section__background-pic' src={mtns} />
     </div>
   );
 }

@@ -16,7 +16,7 @@ const Camp = () => {
         <p className='camp__content-container__body'>There are many camping opportunities on the San Juan National Forest. We offer developed campgrounds and more isolated dispersed camping areas. With some planning you can find a perfect spot for you and your family. While sewer, water hook-ups and showers are not available, most campgrounds have drinking water, picnic tables, fire rings and vault toilets. </p>
       </div>
       <div className="camp__interactive">
-        <img className='section__background-pic' src={camp} />
+        <img alt='camping' className='section__background-pic' src={camp} />
         <div className="camp__tabs">
           <div className={tellurideActive ? "camp__tabs__tab telluride active" : "camp__tabs__tab telluride"} id="telluride-tab" onClick={() => {
             setTellurideActive(true);

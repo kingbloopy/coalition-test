@@ -19,7 +19,7 @@ const Summit = () => {
         <h1>01.</h1>
         <h2>Summit</h2>
       </div>
-      <img className='section__background-pic' src={summit} />
+      <img alt="hiking" className='section__background-pic' src={summit} />
       <div className='summit__content-container'>
         <div className='summit__content-container__title'>
           <h1>01.</h1>
@@ -42,12 +42,12 @@ const Summit = () => {
             },
           }}
         >
-          <SwiperSlide><img className='swiper-img' src={lake} /></SwiperSlide>
-          <SwiperSlide><img className='swiper-img' src={aspens} /></SwiperSlide>
-          <SwiperSlide><img className='swiper-img' src={peak} /></SwiperSlide>
-          <SwiperSlide><img className='swiper-img' src={toad} /></SwiperSlide>
-          <SwiperSlide><img className='swiper-img' src={blue} /></SwiperSlide>
-          <SwiperSlide><img className='swiper-img' src={trucks} /></SwiperSlide>
+          <SwiperSlide><img alt="teal lake" className='swiper-img' src={lake} /></SwiperSlide>
+          <SwiperSlide><img alt="aspens" className='swiper-img' src={aspens} /></SwiperSlide>
+          <SwiperSlide><img alt="peak" className='swiper-img' src={peak} /></SwiperSlide>
+          <SwiperSlide><img alt="desert toad" className='swiper-img' src={toad} /></SwiperSlide>
+          <SwiperSlide><img alt="island lake" className='swiper-img' src={blue} /></SwiperSlide>
+          <SwiperSlide><img alt="camping trucks" className='swiper-img' src={trucks} /></SwiperSlide>
           ...
         </Swiper>
       </div>

@@ -28,7 +28,7 @@ function App() {
       <Sidebar pageWrapId={"page-wrap"}/>
       <header>
         <a className='logo-container' href='/'>
-          <img className='logo' src={logo} />
+          <img alt='logo' className='logo' src={logo} />
           <div className='logo-container__title-container'>
             <h4>San Juan</h4>
             <h5>Mountains</h5>
@@ -59,7 +59,7 @@ function App() {
       </div>
       <footer>
         <a className='logo-container' href='/'>
-          <img className='logo' src={logo} />
+          <img alt='logo' className='logo' src={logo} />
           <div className='logo-container__title-container'>
             <h4>San Juan</h4>
             <h5>Mountains</h5>
